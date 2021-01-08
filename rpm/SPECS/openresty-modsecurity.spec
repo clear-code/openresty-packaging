@@ -76,6 +76,7 @@ export LD_LIBRARY_PATH=%{zlib_prefix}/lib:%{pcre_prefix}/lib:%{openssl_prefix}/l
 	   --bindir=%{modsecurity_prefix}/bin \
 	   --libdir=%{modsecurity_prefix}/lib \
 	   --includedir=%{modsecurity_prefix}/include \
+	   --with-curl=no \
 	   --with-lmdb
 %make_build
 
